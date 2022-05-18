@@ -28,7 +28,7 @@ data class Message(val author: String, val body: String)
 @Composable
 fun MessageCard(msg: Message) {
     //Adiciona padding envolta da mensagem
-    Row (modifier = Modifier.padding(all = 8.dp)){
+    Row(modifier = Modifier.padding(all = 8.dp)) {
         Image(
             painter = painterResource(id = R.drawable.ic_launcher_foreground),
             contentDescription = "Default Image launcher Android",
@@ -40,7 +40,7 @@ fun MessageCard(msg: Message) {
         )
         //Adiciona espaco horizontal entre a imagem e acoluna
         Spacer(modifier = Modifier.width(8.dp))
-        
+
         Column {
             Text(text = msg.author)
             //Adiciona espaco vertical entre as mensagens
