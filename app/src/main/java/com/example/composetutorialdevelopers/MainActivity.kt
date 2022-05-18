@@ -51,9 +51,11 @@ fun MessageCard(msg: Message) {
         Spacer(modifier = Modifier.width(8.dp))
 
         Column {
-            Text(text = msg.author,
-            color = MaterialTheme.colors.secondaryVariant,
-            style = MaterialTheme.typography.subtitle2)
+            Text(
+                text = msg.author,
+                color = MaterialTheme.colors.secondaryVariant,
+                style = MaterialTheme.typography.subtitle2
+            )
 
             //Adiciona espaco vertical entre as mensagens
             Spacer(modifier = Modifier.height(4.dp))
@@ -62,7 +64,8 @@ fun MessageCard(msg: Message) {
                 Text(
                     text = msg.body,
                     modifier = Modifier.padding(all = 4.dp),
-                    style = MaterialTheme.typography.body2)
+                    style = MaterialTheme.typography.body2
+                )
             }
         }
     }
